@@ -29,6 +29,7 @@ import { AccessTokenGuard } from './authentication/guards/access-token.guard';
     },
     BcryptService,
     AccessTokenGuard,
+    RefreshTokenIdsStorage,
     AuthenticationService
   ],
   exports: [
