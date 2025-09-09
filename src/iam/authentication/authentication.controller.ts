@@ -19,12 +19,12 @@ export class AuthenticationController {
     @HttpCode(HttpStatus.OK)
     @Post('sign-in')
     async signIn(@Body() signInDto: SignInDto) {
-        await this.authenticationService.signIn(signInDto);
+    return await this.authenticationService.signIn(signInDto);
     }
 
     @HttpCode(HttpStatus.OK)
     @Post('refresh-tokens')
     async refreshTokens(@Body() refreshTokenDto: RefreshTokenDto) {
-        await this.authenticationService.refreshTokens(refreshTokenDto);
+    return await this.authenticationService.refreshTokens(refreshTokenDto);
     }
 }
